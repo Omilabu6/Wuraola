@@ -48,7 +48,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import ScrollToTop from "./components/Home/ScrolltoTop";
+import ScrollToTop from "./components/Home/ScrollToTop";
 import Preloader from "./components/Home/Preloader";
 
 const App = () => {
