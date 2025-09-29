@@ -1,35 +1,92 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
+// import { Routes, Route, useLocation } from "react-router-dom";
+// import { useEffect, useState } from 'react'
+// import { AnimatePresence, motion } from "framer-motion";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+// import Home from "../src/pages/Home";
+// import About from "../src/pages/About";
+// import Contact from "../src/pages/Contact";
+
+// const App = () => {
+//   const location = useLocation();
+//  const [isImageClicked, setIsImageClicked] = useState(false);
+
+//   return (
+//     <div className="relative">
+//       <Navbar />
+
+//       <AnimatePresence mode="wait">
+//         <motion.div
+//           key={location.pathname}
+//           initial={{ opacity: 0, y: 40 }}
+//           animate={{ opacity: 1, y: 0 }}
+//           exit={{ opacity: 0, y: -40 }}
+//           transition={{ duration: 0.4 }}
+//         >
+//           <Routes location={location} key={location.pathname}>
+//             <Route path="/" element={<Home setIsImageClicked={setIsImageClicked} />}  />
+//             <Route path="/about" element={<About />} />
+//             <Route path="/contact" element={<Contact />} />
+//           </Routes>
+//         </motion.div>
+//       </AnimatePresence>
+//         {isImageClicked && <Footer />}
+//     </div>
+//   );
+// };
+
+// export default App;
+
+
+
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import ScrollToTop from "./components/Home/ScrolltoTop";
+import Preloader from "./components/Home/Preloader";
+
+const App = () => {
+  const location = useLocation();
+  const [isImageClicked, setIsImageClicked] = useState(false);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2800); // same as countdown time
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) return <Preloader />;
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div className="relative">
+      <Navbar />
+      <ScrollToTop />
 
-export default App
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -40 }}
+          transition={{ duration: 0.4 }}
+        >
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<Home setIsImageClicked={setIsImageClicked} />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </motion.div>
+      </AnimatePresence>
+
+      {isImageClicked && <Footer />}
+    </div>
+  );
+};
+
+export default App;
