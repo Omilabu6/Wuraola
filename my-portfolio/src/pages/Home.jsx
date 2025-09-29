@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import ScrollVelocity from '../components/stylesComponets/ScrollVelocity';
 import { AnimatePresence, motion } from 'framer-motion';
-import wura from '../assets/wura.png'
 import Magnet from '../components/stylesComponets/Magnet';
 import arrow1 from '../assets/arrow.png'
 import arrow from '../assets/Group 855.png'
@@ -17,7 +16,7 @@ const [IsExpanded , setIsExpanded] = useState(false)
 
  return (
       <div>
-        <div style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
+        <div  style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
           <AnimatePresence>
             {IsExpanded && (
               <motion.div
@@ -39,7 +38,7 @@ const [IsExpanded , setIsExpanded] = useState(false)
             )}
           </AnimatePresence>
           <motion.img
-            src={wura}
+            src="/wura.webp"
             alt="centered"
             initial={{ scale: 1 }}
             animate={{ scale: IsExpanded ? 1.2 : 1 }}

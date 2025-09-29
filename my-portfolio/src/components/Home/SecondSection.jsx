@@ -140,7 +140,7 @@ const SecondSection = () => {
             impactful web solutions. “</motion.div>
           </h1>
           <h1 className="flex  justify-end items-end text-7xl pt-55">
-            <img src={wura1} alt="" className="w-20 rounded-2xl mr-4" />
+            <img src="/wura1.webp" alt="" className="w-20 rounded-2xl mr-4" />
             <div className="flex flex-col justify-end items-end">
               <Shuffle
                 text="CREATIVE DEVELOPER"

@@ -1,4 +1,4 @@
-import cute from '../assets/cute.jpg';
+
 import React, { useRef } from "react";
 import '../App.css';
 import Magnet from '../components/stylesComponets/Magnet';
@@ -108,7 +108,7 @@ const Scale = () => {
       <div className="sticky_">
         <div className="element">
           <motion.div style={{ scale: scale4 }} className="videoContainer">
-            <img src={cute} alt="Cute" />
+            <img src="/cute.webp" alt="Cute" />
           </motion.div>
         </div>
       </div>

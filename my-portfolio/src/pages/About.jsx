@@ -1,5 +1,4 @@
 import React from 'react'
-import seexy from '../assets/seexy.jpg';
 import ScrollReveal from '../components/stylesComponets/ScrollReveal';
 import GetInTouch from '../components/Home/GetInTouch';
 import Footer from '../components/Footer';
@@ -8,7 +7,7 @@ const About = () => {
   return (
     <div className='bg-[#5A67D89C] pt-10   '>
       <div className='px-60 py-10'>
-        <img src={seexy} alt="" className='w-[300px] rounded-xl'/>
+        <img src="/seexy.webp" alt="" className='w-[300px] rounded-xl'/>
          <h1 className='text-3xl py-4  px-10 '>Hello I'm Wuraola</h1>
       </div>
       <hr  className='mx-5'/>
