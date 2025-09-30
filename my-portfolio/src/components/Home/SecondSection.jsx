@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useTransform, useScroll } from "framer-motion";
-import wura1 from "../../assets/wura1.jpg"
 import Shuffle from '../stylesComponets/Shuffle';
 import "./../../App.css";
 
@@ -55,9 +54,9 @@ const SecondSection = () => {
   }, []);
 
   return (
-    <div ref={container} className=""> {/* ✅ attach ref here */}
+    <div ref={container} className="border-amber-400"> {/* ✅ attach ref here */}
       <div className="overflow-hidden">
-        <div className="py-[15em] px-[3em]">
+        <div className="py-[15em] px-5 md:px-[3em]">
           {/* 🟢 Animated SVG */}
           <div className="md:block hidden">
             <div className="relative">
@@ -119,7 +118,7 @@ const SecondSection = () => {
             </div>
           </div>
 
-          <h1 className="text-2xl w-[25em]">
+          <h1 className="text-2xl md:w-[25em]">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -139,8 +138,8 @@ const SecondSection = () => {
               >beautiful, and
             impactful web solutions. “</motion.div>
           </h1>
-          <h1 className="flex  justify-end items-end text-7xl pt-55">
-            <img src="/wura1.webp" alt="" className="w-20 rounded-2xl mr-4" />
+          <h1 className="flex md:flex-row flex-col justify-end items-end text-7xl pt-55">
+            <img src='/wura1.webp' alt="" className="w-20 h-40 rounded-2xl mr-4" />
             <div className="flex flex-col justify-end items-end">
               <Shuffle
                 text="CREATIVE DEVELOPER"

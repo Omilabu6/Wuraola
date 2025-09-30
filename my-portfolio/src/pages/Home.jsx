@@ -16,7 +16,7 @@ const [IsExpanded , setIsExpanded] = useState(false)
 
  return (
       <div>
-        <div  style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }}>
+        <div  style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }} className=''>
           <AnimatePresence>
             {IsExpanded && (
               <motion.div
@@ -44,17 +44,9 @@ const [IsExpanded , setIsExpanded] = useState(false)
             animate={{ scale: IsExpanded ? 1.2 : 1 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
             style={{
-              position: "absolute",
-              top: "13%",
-              left: "35%",
-              transform: "translate(-50%, -50%)",
-              zIndex: 2,
-              cursor: "pointer",
-              borderRadius: "1rem",
               backgroundColor: IsExpanded ? "transparent" : "rgba(90, 103, 216, 0.61)",
-              padding: "20px 10px 0 10px",
-
             }}
+            className='openingImage'
             onClick={() => {
               setIsImageClicked(true);
               setIsExpanded(true);
@@ -96,7 +88,7 @@ const [IsExpanded , setIsExpanded] = useState(false)
                   fontSize: "2rem",
                 }}
               >
-                <div className='bg-black border-2 rounded-3xl border-white p-2 px-3 text-white text-xl'>
+                <div className='bg-black border-2 hidden md:block rounded-3xl border-white p-2 px-3 text-white text-lg md:text-xl'>
                   CREATIVE FRONTEND DEVELOPER
                 </div>
                 <div >

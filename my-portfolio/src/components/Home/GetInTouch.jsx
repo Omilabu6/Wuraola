@@ -6,9 +6,9 @@ import { motion } from 'framer-motion'
 
 const GetInTouch = () => {
   return (
-    <div className='py-40 px-20 bg-white rounded-4xl  text-black'>
+    <div className='py-40 md:px-20 px-5 bg-white rounded-4xl  text-black'>
         <div>
-            <div className='text-7xl'>
+            <div className='md:text-7xl text-4xl'>
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
@@ -25,15 +25,8 @@ const GetInTouch = () => {
               </motion.div>
             </div>
             
-            <motion.hr 
-             initial={{ width: 0, opacity: 0 }}
-                whileInView={{ width: 950, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                style={{
-                    backgroundColor: "white",
-                    transformOrigin: "right", // 🔑 makes it expand from right
-                }}
-            className='mt-20 mb-10'/>
+            <hr
+            className='md:mt-20 mt-10 mb-10 w-[85%]'/>
             <Magnet padding={50} disabled={false} magnetStrength={3}>
              <div><h1 className='text-xl text-center cursor-pointer rounded-4xl px-5 w-[200px] bg-indigo-400 py-5 '><Magnet padding={50} disabled={false} magnetStrength={3}>Get in Touch</Magnet></h1></div>
             </Magnet>

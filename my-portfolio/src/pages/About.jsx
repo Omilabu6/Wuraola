@@ -6,14 +6,14 @@ import Footer from '../components/Footer';
 const About = () => {
   return (
     <div className='bg-[#5A67D89C] pt-10   '>
-      <div className='px-60 py-10'>
+      <div className='md:px-60 px-10 py-10'>
         <img src="/seexy.webp" alt="" className='w-[300px] rounded-xl'/>
-         <h1 className='text-3xl py-4  px-10 '>Hello I'm Wuraola</h1>
+         <h1 className='md:text-3xl text-2xl py-4  px-10 '>Hello I'm Wuraola</h1>
       </div>
       <hr  className='mx-5'/>
       <div className='flex justify-between mx-auto md:flex-row   rounded-3xl align-middle item-center pt-10 pb-10  px-5 gap-5 flex-col '>
         <div className='font-semibold  text-2xl'>ABOUT ME</div>
-        <div className='  text-2xl w-[60%] pb-20'>       
+        <div className='  text-2xl md:w-[60%] pb-20'>       
           <ScrollReveal
             baseOpacity={0}
             enableBlur={true}

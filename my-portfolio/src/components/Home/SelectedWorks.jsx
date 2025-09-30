@@ -1,9 +1,5 @@
 
 import React, { useState } from 'react'
-import wakamate from '../../assets/wakamate.png'
-import luxry from '../../assets/luxry.png'
-import mentra from '../../assets/mentra.png'
-import bw from '../../assets/bw.png'
 import FlowingMenu from '../stylesComponets/FlowingMenue';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -11,25 +7,25 @@ const demoItems = [
   { 
     link: 'https://waka-mate-ai.vercel.app/', 
     text: 'WAKAMATE', 
-    image: wakamate,
+    image: '/wakamate.webp',
     description: 'WakaMate AI is an AI assistant that helps small vendors plan routes, track sales, restock smartly, and grow with ease.' 
   },
   { 
     link: 'https://mentra-kb84.vercel.app/', 
     text: 'MENTRA', 
-    image: mentra,
+    image: '/mentra.webp',
     description: 'Mentra is an empathetic AI chatbot offering 24/7 mental health support, emotion analysis, and personalized guidance, with privacy-first, crisis detection, and cross-platform access.' 
   },
   { 
     link: 'https://luxury-design-challenge.vercel.app/', 
     text: 'ETERNA', 
-    image: luxry,
+    image: '/luxry.webp',
     description: 'Eterna curates exclusive, luxurious escapes where every destination is a masterpiece crafted for the discerning traveler.' 
   },
   { 
     link: 'https://bwdesigns.vercel.app/', 
     text: 'Black and White', 
-    image: bw,
+    image: '/bw.webp',
     description: 'BLK + WHT is a minimalist fashion brand offering bold, black-and-white essentials that express confidence and individuality.' 
   }
 ];
@@ -124,11 +120,11 @@ const SelectedWorks = () => {
                 }}
             >
             </motion.div>
-            <h1 className='text-8xl '>
+            <h1 className='md:text-8xl text-5xl ml-2 '>
                 Selected Works
             </h1>
         </div>
-        <h2 className=' w-[50%] py-4 px-6 mb-30'>Here is a collection of some projects I've built through collaborations, hackathons, and personal explorations each reflecting my creativity, problem-solving skills, and passion for impactful solutions.</h2>
+        <h2 className=' md:w-[50%] py-4 px-6 mb-30'>Here is a collection of some projects I've built through collaborations, hackathons, and personal explorations each reflecting my creativity, problem-solving skills, and passion for impactful solutions.</h2>
         
         <div style={{ height: '600px', position: 'relative' }}>
           <FlowingMenu 

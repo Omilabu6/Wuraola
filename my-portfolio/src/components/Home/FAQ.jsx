@@ -44,7 +44,7 @@ const FAQ = () => {
   };
 
   return (
-    <div className='py-30 px-10 text-white bg-zinc-800'>
+    <div className='py-30 px-5 md:px-10 text-white bg-zinc-800'>
       <div className='flex justify-between pb-20 pr-5 align-middle items-center'>
             <motion.div
                 initial={{ width:0 ,opacity:0 }}
@@ -58,7 +58,7 @@ const FAQ = () => {
                 }}
             >
             </motion.div>
-            <h1 className='text-8xl '>
+            <h1 className='md:text-8xl text-5xl'>
                 FAQ
             </h1>
            

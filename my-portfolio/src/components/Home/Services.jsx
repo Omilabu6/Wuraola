@@ -66,12 +66,12 @@ const Services = () => {
   const displayedServices = showAll ? services : services.slice(0, 3);
 
   return (
-    <div id="expertise" className="bg-zinc-800 min-h-screen py-30 px-10 font-sans">
+    <div id="expertise" className="bg-zinc-800 min-h-screen py-30 px-5 md:px-10 font-sans">
       <div className="max-w-7xl mx-auto">
         {/* Title with underline */}
         <div className="mb-8 sm:mb-12 lg:mb-16">
             <div className='flex justify-between pb-20 pr-5 align-middle items-center'>
-                <h1 className='text-8xl text-white '>
+                <h1 className='md:text-8xl text-5xl text-white '>
                  My Expertise
             </h1>
            <motion.div

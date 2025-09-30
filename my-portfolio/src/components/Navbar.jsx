@@ -33,11 +33,11 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar-container">
+    <div className="navbar-container ">
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="navbar"
+        className="navbar "
       >
         <div className="navbar-inner">
           <div className="navbar-content">
