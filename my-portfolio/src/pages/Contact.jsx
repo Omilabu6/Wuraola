@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import '../App.css';
 import Magnet from '../components/stylesComponets/Magnet';
 import { useScroll, useTransform, motion } from 'framer-motion';
-import Footer from '../components/Footer';
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -88,7 +87,6 @@ const Contact = () => {
         <span className='font-semibold'>Get in touch :</span>
         omilabuw@gmail.com, +234 8133909844
       </div>
-      <Footer />
     </div>
   );
 };

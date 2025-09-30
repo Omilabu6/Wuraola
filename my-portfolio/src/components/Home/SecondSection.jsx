@@ -169,8 +169,8 @@ const SecondSection = () => {
               /> 
            </div>
           </h1>
-          <h2 className="text-xl w-[20em] pt-45 pl-2">
-            <motion.span
+          <h2 className="text-xl md:w-[20em] pt-45   pl-2">
+        <motion.span
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.1 }}

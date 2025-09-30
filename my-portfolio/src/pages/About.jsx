@@ -1,7 +1,6 @@
 import React from 'react'
 import ScrollReveal from '../components/stylesComponets/ScrollReveal';
 import GetInTouch from '../components/Home/GetInTouch';
-import Footer from '../components/Footer';
 
 const About = () => {
   return (
@@ -58,7 +57,6 @@ const About = () => {
         </div>
      </div>
       <GetInTouch />
-      <Footer />
     </div>
   )
 }
