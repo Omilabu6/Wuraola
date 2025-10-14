@@ -124,7 +124,7 @@ const SecondSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 , delay: 0.3}}
               >
-            “ I’m a frontend developer who loves bringing creativity </motion.div>
+             I’m a frontend developer who loves bringing creativity </motion.div>
              <motion.div
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
@@ -136,7 +136,7 @@ const SecondSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.5 , delay: 0.7}}
               >beautiful, and
-            impactful web solutions. “</motion.div>
+            impactful web solutions. </motion.div>
           </h1>
           <h1 className="flex md:flex-row flex-col justify-end items-end text-7xl pt-55">
             <img src='/wura1.webp' alt="" className="w-20 h-40 rounded-2xl mr-4" />
