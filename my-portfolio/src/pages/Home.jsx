@@ -30,18 +30,27 @@ useEffect(() => {
 
  return (
       <div>
-        {/* Custom Cursor */}
+        {/* Custom Cursor for Desktop */}
         {isHoveringImage && !IsExpanded && (
           <div
-            className="fixed pointer-events-none z-50 transition-all duration-200"
+            className="fixed pointer-events-none z-50 transition-all duration-200 hidden md:block"
             style={{
               left: `${cursorPosition.x}px`,
               top: `${cursorPosition.y + 25}px`,
               transform: 'translateX(-50%)',
             }}
           >
-            <div className=" text-black px-4 py-2 rounded-full text-xs bg-white font-semibold shadow-lg">
-              Click
+            <div className="bg-white text-black px-4 py-2 rounded-full font-bold text-sm shadow-lg">
+              Click me
+            </div>
+          </div>
+        )}
+
+        {/* Touch Indicator for Mobile */}
+        {!IsExpanded && (
+          <div className="md:hidden absolute inset-0 flex items-center justify-center pointer-events-none z-10">
+            <div className="bg-white text-black px-6 py-3 rounded-full font-bold text-lg shadow-2xl animate-bounce">
+              Tap me
             </div>
           </div>
         )}
