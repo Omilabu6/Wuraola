@@ -12,10 +12,40 @@ import GetInTouch from '../components/Home/GetInTouch';
 
 function Home({ setIsImageClicked }) {
 const [IsExpanded , setIsExpanded] = useState(false)
+const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+const [isHoveringImage, setIsHoveringImage] = useState(false);
+
+useEffect(() => {
+  const handleMouseMove = (e) => {
+    setCursorPosition({ x: e.clientX, y: e.clientY });
+  };
+
+  window.addEventListener('mousemove', handleMouseMove);
+
+  return () => {
+    window.removeEventListener('mousemove', handleMouseMove);
+  };
+}, []);
 
 
  return (
       <div>
+        {/* Custom Cursor */}
+        {isHoveringImage && !IsExpanded && (
+          <div
+            className="fixed pointer-events-none z-50 transition-all duration-200"
+            style={{
+              left: `${cursorPosition.x}px`,
+              top: `${cursorPosition.y + 25}px`,
+              transform: 'translateX(-50%)',
+            }}
+          >
+            <div className=" text-black px-4 py-2 rounded-full text-xs bg-white font-semibold shadow-lg">
+              Click
+            </div>
+          </div>
+        )}
+
         <div  style={{ position: "relative", width: "100%", height: "100vh", overflow: "hidden" }} className=''>
           <AnimatePresence>
             {IsExpanded && (
@@ -37,6 +67,7 @@ const [IsExpanded , setIsExpanded] = useState(false)
               />
             )}
           </AnimatePresence>
+          
           <motion.img
             src="/wura.webp"
             alt="centered"
@@ -47,6 +78,8 @@ const [IsExpanded , setIsExpanded] = useState(false)
               backgroundColor: IsExpanded ? "transparent" : "rgba(90, 103, 216, 0.61)",
             }}
             className='openingImage'
+            onMouseEnter={() => setIsHoveringImage(true)}
+            onMouseLeave={() => setIsHoveringImage(false)}
             onClick={() => {
               setIsImageClicked(true);
               setIsExpanded(true);
