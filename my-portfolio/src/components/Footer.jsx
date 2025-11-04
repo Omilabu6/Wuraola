@@ -13,11 +13,11 @@ const Footer = () => {
             <a rel="stylesheet" href="www.linkedin.com/in/omilabu-wuraola-7a200b329" ><img src='/LinkedIn.webp' alt="" className='w-13 ' /></a>  
           </div>
           <div className='flex md:flex-row flex-col  pt-5 '>
-            <Link to='/' className='text-2xl  font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Home</Link>
-            <Link to='/about' className='text-2xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>About</Link>
-            <Link to='#services' className='text-2xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Services</Link>
-            <Link to='#works' className='text-2xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Works</Link>
-            <Link to='/contact' className='text-2xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Contact</Link>
+            <Link to='/' className='text-xl  font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Home</Link>
+            <Link to='/about' className='text-xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>About</Link>
+            <Link to='#services' className='text-xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Services</Link>
+            <Link to='#works' className='text-xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Works</Link>
+            <Link to='/contact' className='text-xl md:ml-5 font-light hover:border-b-2 duration-200 hover:text-indigo-400 transition transform hover:border-indigo-400'>Contact</Link>
           </div>
         </div>
           <h1 className='footerText mt-35 mx-auto'>ELIZABETH W.
