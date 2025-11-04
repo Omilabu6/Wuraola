@@ -12,7 +12,7 @@ const About = () => {
       <hr  className='mx-5'/>
       <div className='flex justify-between mx-auto md:flex-row   rounded-3xl align-middle item-center pt-10 pb-10  px-5 gap-5 flex-col '>
         <div className='font-semibold  text-2xl'>ABOUT ME</div>
-        <div className='  text-2xl md:w-[60%] pb-20'>       
+        <div className='  text-xl md:w-[60%] pb-20'>       
           <ScrollReveal
             baseOpacity={0}
             enableBlur={true}
