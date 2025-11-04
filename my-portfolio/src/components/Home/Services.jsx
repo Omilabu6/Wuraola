@@ -108,7 +108,7 @@ const Services = () => {
                 }}
                 className="relative h-64 sm:h-72 lg:h-80 flex flex-col justify-between"
                 style={{
-                  perspective: "1000px", 
+                  perspective: "100px", 
                 }}
               >
                 <div
