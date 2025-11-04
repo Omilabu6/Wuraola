@@ -135,10 +135,9 @@ useEffect(() => {
                 </div>
                 <div >
                   <img src={arrow} alt="" className='-translate-y-10 w-[20%] translate-x-75 -rotate-50' />
-                  <h2 className=' text-sm w-50 -translate-y-10  translate-x-50 '>I build cool stuff—like 
-                    engaging, responsive
-                    websites and delightful
-                    user experiences
+                  <h2 className=' text-sm w-50 -translate-y-10  translate-x-50 '>I build cool websites that are very
+                    interactive, responsive 
+                    and give users a delightful.
                   </h2>
                 </div>
               </motion.div>
