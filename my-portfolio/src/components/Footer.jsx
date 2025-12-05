@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from "react-router-dom";
+import FooterSlideIn from './stylesComponets/FooterSlideIn';
 
 const Footer = () => {
   return (
@@ -14,21 +16,21 @@ const Footer = () => {
 
           <div className='flex justify-between gap-10 md:gap-[20rem]'>
             <nav className='flex flex-col space-y-2 text-sm  uppercase tracking-wider'>
-              <a href='/' className='hover:text-indigo-400 transition-colors duration-200'>
+              <Link to='/' className='hover:text-indigo-400 transition-colors duration-200'>
                 Home
-              </a>
-              <a href='/about' className='hover:text-indigo-400 transition-colors duration-200'>
+              </Link>
+              <Link to='/about' className='hover:text-indigo-400 transition-colors duration-200'>
                 About
-              </a>
-              <a href='#services' className='hover:text-indigo-400 transition-colors duration-200'>
-                Services
-              </a>
-              <a href='#works' className='hover:text-indigo-400 transition-colors duration-200'>
+              </Link>
+              <Link to='/#expertise' className='hover:text-indigo-400 transition-colors duration-200'>
+                Expertise
+              </Link>
+              <Link to='/#works' className='hover:text-indigo-400 transition-colors duration-200'>
                 Works
-              </a>
-              <a href='/contact' className='hover:text-indigo-400 transition-colors duration-200'>
+              </Link>
+              <Link to='/contact' className='hover:text-indigo-400 transition-colors duration-200'>
                 Contact
-              </a>
+              </Link>
             </nav>
 
            {/* Social Icons */}
@@ -85,7 +87,13 @@ const Footer = () => {
                 Privacy Policy
               </a>
             </div>
-            <a href='#' className='hover:text-indigo-400 transition-colors duration-200 md:ml-auto'>
+            <a href='#' onClick={(e) => {
+                e.preventDefault(); 
+                window.scrollTo({
+                  top: 0,
+                  behavior: "smooth", // smooth slide effect
+                });
+              }} className='hover:text-indigo-400 transition-colors duration-200 md:ml-auto'>
                 Back to Top
             </a>
           </div>
@@ -93,15 +101,7 @@ const Footer = () => {
       </div>
 
       {/* Large Text Background */}
-      <div className='absolute  inset-0 flex items-end justify-center overflow-hidden pointer-events-none'>
-        <h2 className='text-8xl sm:text-[9rem] md:text-[10rem] lg:text-[12rem] font-bold text-transparent tracking-tighter leading-none'
-            style={{
-             WebkitTextStroke: '2px rgb(255, 255, 255)',
-              textStroke: '2px rgb(255, 255, 255)'
-            }}>
-          ELIZABETH W.
-        </h2>
-      </div>
+     <FooterSlideIn />
     </footer>
   )
 }
