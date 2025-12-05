@@ -9,6 +9,7 @@ import SelectedWorks from '../components/Home/SelectedWorks';
 import Services from '../components/Home/Services';
 import FAQ from '../components/Home/FAQ';
 import GetInTouch from '../components/Home/GetInTouch';
+import Footer from '../components/Footer';
 
 function Home({ setIsImageClicked }) {
 const [IsExpanded , setIsExpanded] = useState(false)
@@ -159,6 +160,7 @@ useEffect(() => {
             <Services />
               <FAQ />
               <GetInTouch />
+              <Footer />
           </div>
           }
   </div>

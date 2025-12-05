@@ -48,17 +48,23 @@ export default function Navbar() {
 
              <Magnet padding={50} disabled={false} magnetStrength={3}>
                 <button onClick={toggleMenu} className="navbar-menu-btn">
-                  <span className="navbar-menu-text">Menu</span>
-                  <motion.div
-                    animate={{ rotate: isMenuOpen ? 90 : 0 }}
-                    transition={{ duration: 0.3 }}
-                  >
-                    {isMenuOpen ? (
-                      <X className="navbar-menu-icon" />
-                    ) : (
-                      <Menu className="navbar-menu-icon" />
-                    )}
-                  </motion.div>
+                  <Magnet padding={50} disabled={false} magnetStrength={3}>
+                    <div className="flex justify-center gap-2 items-center">
+                      <span className="navbar-menu-text">Menu</span>
+                      <div>
+                        <motion.div
+                          animate={{ rotate: isMenuOpen ? 90 : 0 }}
+                          transition={{ duration: 0.3 }}
+                        >
+                          {isMenuOpen ? (
+                            <X className="navbar-menu-icon" />
+                          ) : (
+                            <Menu className="navbar-menu-icon" />
+                          )}
+                        </motion.div>
+                      </div>
+                    </div>
+                  </Magnet>
                 </button>
             </Magnet>
           </div>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 const GetInTouch = () => {
   return (
-    <div className='py-40 md:px-20 px-5 bg-white rounded-4xl  text-black'>
+    <div className='py-40 md:px-20 px-5 bg-zinc-800  text-white'>
         <div>
             <div className='md:text-7xl text-4xl'>
               <motion.div

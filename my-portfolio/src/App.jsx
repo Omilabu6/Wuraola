@@ -42,7 +42,7 @@ const App = () => {
         </motion.div>
       </AnimatePresence>
 
-      {isImageClicked && <Footer />}
+      {isImageClicked }
     </div>
   );
 };

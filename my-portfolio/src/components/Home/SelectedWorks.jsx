@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const demoItems = [
   { 
-    link: 'https://waka-mate-ai.vercel.app/', 
+    link: 'https://www.wakamateai.com/', 
     text: 'WAKAMATE', 
     image: '/wakamate.webp',
     description: 'WakaMate AI is an AI assistant that helps small vendors plan routes, track sales, restock smartly, and grow with ease.' 
@@ -27,7 +27,26 @@ const demoItems = [
     text: 'Black and White', 
     image: '/bw.webp',
     description: 'BLK + WHT is a minimalist fashion brand offering bold, black-and-white essentials that express confidence and individuality.' 
-  }
+  },
+  { 
+    link: 'https://whisper-kohl-beta.vercel.app/', 
+    text: 'Whisper', 
+    image: '/wispher.webp',
+    description: 'Whisper is a security platform that scans code, detects vulnerabilities, and generates AI-powered fixes so teams can secure software faster and collaborate from one unified dashboard.'
+  },
+  { 
+    link: 'https://stampnet.vercel.app/', 
+    text: 'Stampnet', 
+    image: '/stampnet.webp',
+    description: 'StampNet is a blockchain-based platform that timestamps documents for secure, tamper-proof verification without storing sensitive data, making digital authenticity simple and reliable.' 
+  },
+   { 
+    link: 'https://swift-funds.vercel.app/', 
+    text: 'Swiftfund', 
+    image: '/swiftfund.webp',
+    description: 'SwiftFund is a decentralized lending platform that connects borrowers and lenders through Cardano smart contracts, offering fast, transparent, and secure peer-to-peer loans without banks or middlemen.' 
+  },
+
 ];
 
 // Modal/Popup component for displaying selected item details

@@ -4,6 +4,7 @@ import '../App.css';
 import Magnet from '../components/stylesComponets/Magnet';
 import { useScroll, useTransform, motion } from 'framer-motion';
 import emailjs from "emailjs-com";
+import Footer from '../components/Footer';
 
 const Contact = () => {
   const form = useRef();
@@ -87,6 +88,7 @@ const Contact = () => {
         <span className='font-semibold'>Get in touch :</span>
         omilabuw@gmail.com, +234 8133909844
       </div>
+      <Footer />
     </div>
   );
 };
