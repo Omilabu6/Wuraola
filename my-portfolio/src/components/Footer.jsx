@@ -78,7 +78,7 @@ const Footer = () => {
             <p className='uppercase tracking-wider'>All Rights Reserved</p>
             <p className='uppercase tracking-wider'>© Elizabeth W. {new Date().getFullYear()}</p>
           </div>
-          <div flex className='flex justify-between gap-10 md:gap-[20rem]'>
+          <div flex className='flex  justify-between gap-10 md:gap-[20rem]'>
             <div className='flex flex-col  uppercase tracking-wider'>
               <a href='#' className='hover:text-indigo-400 transition-colors duration-200'>
                 Terms & Conditions

@@ -2,7 +2,7 @@ import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 
 export default function AnimatedText() {
-    const phrase = "ELIZABETH  W.";
+    const phrase = "ELIZABETH W.";
     const description = useRef(null);
     const isInView = useInView(description);
     
@@ -23,10 +23,10 @@ export default function AnimatedText() {
     return (
         <motion.div 
             ref={description} 
-            className="w-full flex justify-center"
+            className="w-full flex  justify-center"
         >
-            <div className="w-full  text-center flex justify-center flex-col ">
-                <p className="text-8xl sm:text-[9rem] md:text-[9rem]   font-normal  font-serif m-0 flex flex-wrap justify-center gap-1 lg:gap-2">
+            <div className="w-full   text-center flex justify-center flex-col ">
+                <p className="text-[3rem] sm:text-[5rem] md:text-[9rem]    flex justify-center   font-serif m-0  gap-1 lg:gap-2">
                     {phrase.split(" ").map((word, index) => {
                         return (
                             <span 
