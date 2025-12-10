@@ -26,7 +26,7 @@ const demoItems = [
     link: 'https://zee-three.vercel.app/', 
     text: 'ZEE', 
     image: '/zee.png',
-    description: 'Zabe is your personalized AI stylist that helps you discover your fashion vibe through a fun quiz, then generates outfit ideas based on your activities and aesthetic. It explains why each look works and lets you save favourites, making getting dressed easier, faster, and more confident.'
+    description: 'Zee is your personalized AI stylist that helps you discover your fashion vibe through a fun quiz, then generates outfit ideas based on your activities and aesthetic. It explains why each look works and lets you save favourites, making getting dressed easier, faster, and more confident.'
   },
   { 
     link: 'https://bwdesigns.vercel.app/', 
