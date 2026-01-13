@@ -5,6 +5,12 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 const demoItems = [
   { 
+    link: 'https://www.covantra.com/', 
+    text: 'COVANTRA', 
+    image: '/covantra.png',
+    description: 'Covantra is a Canadian mortgage platform modernizing private mortgage participation, servicing, and reporting. Built on $175M+ of real mortgage experience, it offers secure investor tracking, automated workflows, and transparent reporting while supporting borrowers with tailored financing solutions.' 
+  },
+  { 
     link: 'https://www.wakamateai.com/', 
     text: 'WAKAMATE', 
     image: '/wakamate.webp',
