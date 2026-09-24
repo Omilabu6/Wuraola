@@ -34,6 +34,12 @@ const demoItems = [
     image: '/zee.png',
     description: 'Zee is your personalized AI stylist that helps you discover your fashion vibe through a fun quiz, then generates outfit ideas based on your activities and aesthetic. It explains why each look works and lets you save favourites, making getting dressed easier, faster, and more confident.'
   },
+   { 
+    link: 'https://flying-pizza.vercel.app/', 
+    text: 'FLYING-PIZZA', 
+    image: '/flying-pizza.png',
+    description: 'Flying Pizza is a fun project i built to test my illustration creativity, it"s basically a pizza that flys and stops on voice command',
+  },
   { 
     link: 'https://bwdesigns.vercel.app/', 
     text: 'Black and White', 
